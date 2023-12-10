@@ -83,7 +83,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔔Update Channel", url='https://t.me/Tokyo_Update'),
+                    InlineKeyboardButton("🔔 Update Channel", url='https://t.me/Tokyo_Update'),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
