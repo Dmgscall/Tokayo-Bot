@@ -83,13 +83,13 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔔 Update Channel", url='https://t.me/Tokyo_Update'),
+                    InlineKeyboardButton("🔔 Update Channel", url='https://t.me/TokyoUpdate4'),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
         )
         await message.reply_text(
-            text = START_MSG.format(
+            text = START_MSG.fogrmat(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
                 username = None if not message.from_user.username else '@' + message.from_user.username,
